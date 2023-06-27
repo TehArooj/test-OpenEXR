@@ -2,7 +2,7 @@ import OpenEXR
 import numpy as np
 
 # Specify the path to your OpenEXR file
-file_path = './input.exr'
+file_path = './dwsample-exr-640.exr'
 
 exr_file = OpenEXR.InputFile(file_path)
 
