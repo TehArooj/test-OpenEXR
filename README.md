@@ -1,0 +1,1 @@
+A sample project to check working of OpenEXR library with Python.
