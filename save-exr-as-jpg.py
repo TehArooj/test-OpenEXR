@@ -2,7 +2,7 @@ import OpenEXR
 import numpy as np
 from PIL import Image
 
-def convert_exr_to_jpeg(exr_file_path, jpeg_file_path):
+def convert_exr_to_jpg(exr_file_path, jpg_file_path):
     # Open the EXR file
     exr_file = OpenEXR.InputFile(exr_file_path)
 
@@ -44,14 +44,14 @@ def convert_exr_to_jpeg(exr_file_path, jpeg_file_path):
     # Create a PIL Image from the channel data
     image = Image.fromarray(image_data_rescaled)
 
-    # Save the image as a JPEG file
-    image.save(jpeg_file_path)
+    # Save the image as a jpg file
+    image.save(jpg_file_path)
 
 # Specify the path to your EXR file
 exr_file_path = './dwsample-exr-640.exr'
 
-# Specify the path to save the JPEG file
-jpeg_file_path = './newImage.jpeg'
+# Specify the path to save the jpg file
+jpg_file_path = './newImage.jpg'
 
-# Convert the EXR file to JPEG
-convert_exr_to_jpeg(exr_file_path, jpeg_file_path)
+# Convert the EXR file to jpg
+convert_exr_to_jpg(exr_file_path, jpg_file_path)
