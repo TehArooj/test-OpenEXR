@@ -19,6 +19,7 @@ image = graph.output("/preview")
 
 image.layers["CryptoPreview"]
 
+print("METADATA")
 graph.output("/load").metadata
 
 # imagecat.add_task(graph, "/cryptomatte", imagecat.operator.cryptomatte.decoder,
