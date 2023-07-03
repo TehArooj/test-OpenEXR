@@ -17,8 +17,6 @@ imagecat.add_links(graph, "/load", ("/preview", "image"))
 graphcat.notebook.display(graph)
 image = graph.output("/preview")
 
-# imagecat.operator.save(graph, 'file_saver', [image,'./outputs','*'])
-
 image.layers["CryptoPreview"]
 
 graph.output("/load").metadata
